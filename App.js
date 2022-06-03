@@ -1,61 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
-// import FormInput from "./components/FormInput";
 
-/*
-const App = () => {
-   const[values, setValues] = useState({
-     fullname:"",
-     email:"",
-     password:"",
-     date:"",
-   });
-
-   const inputs = [
-    {
-     id:1,
-     name:"fullname",
-     type:"text",
-     placeholder:"fullname",
-     label:""
-    },
-
-    {
-      id:2,
-      name:"email",
-      type:"text",
-      placeholder:"email",
-      label:""
-     },
-
-     {
-      id:3,
-      name:"password",
-      type:"password",
-      placeholder:"password",
-      label:""
-     },
-
-     {
-      id:4,
-      name:"date",
-      type:"date",
-      placeholder:"date",
-      label:""
-     },
-   ]
-
-  const handleSubmit = (e)=>{
-    e.preventDefault();
-  }
-
-  const onChange = (e)=>{
-    setValues({...values, [e.target.name]: e.target.value});
-  }
-
-
-  console.log(values);
-  */
 const Input = ({label, id, handleChange, name, type}) => (
   <>
     <label htmlFor={id}>{label}</label>
